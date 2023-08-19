@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Paytone+One&family=Roboto:wght@400;500;700;900&family=Rubik&display=swap');
+
+:root {
+    --bg-color: #eff6ff; 
+    --nav-color: #020617 ; 
+    --light-txt: #e2e8f0 ; 
+    --d-txt : #94a3b8 ; 
+    --dark-txt: #374151 ; 
+    --hover-txt: #2563eb ; 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Paytone One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--bg-color);
+}
+h2 {
+    color: var(--light-txt);
+}
+a {
+    text-decoration: none;
+}
+h4 {
+    color: var(--dark-txt);
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1rem;
+    color: var(--d-txt);
+}
+hr{
+    display: block;
+    width: 80%;
+}
+#notification {
+    color: #2563eb;
+    font-size: 2rem;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "sideg maing";
+    column-gap: 20px;
+}
+.main {
+    display: grid;
+    grid-template-rows: 110px 1fr;
+    row-gap: 50px;
+}
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    background-color: var(--nav-color);
+    padding-top: 20px;
+}
+.side-nav >span>a{
+    color: var(--light-txt);
+    font-size: 1.2rem;
+    text-align: start;
+}
+.side-nav >span>a:hover {
+    color: #2563eb;
+}
+.side-nav >span {
+    color: var(--light-txt);
+    font-size: 1.2rem;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr) ; 
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 10px 10px 50px rgba(0,0, 0,0.2);
+    align-items: center;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: var(--dark-txt);
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+.links > a {
+    color: var(--dark-txt);
+    font-size: 1.2rem;
+}
+.right {
+    display: flex ; 
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.avatar-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.avatar {
+    width: 50px ; 
+    height: 50px; 
+    background-image: url(assets/MV5BMTQzMjkwNTQ2OF5BMl5BanBnXkFtZTgwNTQ4MTQ4MTE@._V1_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.user-name {
+    font-size: 1.3rem;
+    color: #020617;
+}
+.showroom {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 30px;
+}
+
+.content-side {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    gap: 30px;
+    grid-auto-rows: 350px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 50px rgba(0,0, 0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 1000ms;
+    border: #2563eb 1px solid;
+
+}
+.card-img {
+    width: 90%;
+    height: 150px;
+    background-image: url(assets/blob-scene-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.card-disc {
+    width: 90%;
+    color: var(--d-txt);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-icons {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: end;
+    gap: 10px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 10px;
+}
+.anouncements {
+    display: grid;
+    grid-template-rows: repeat(auto-fit , minmax(150px ,1fr));
+    grid-auto-rows: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 10px 10px 50px rgba(0,0, 0,0.2);
+    row-gap: 20px;
+}
+
+.an {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.trending{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 50px rgba(0,0, 0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.trend {
+    border-bottom: 2px solid var(--dark-txt);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.trend >p{
+    font-size: 1rem;
+    color: var(--d-txt);
+}
+
+
+a:hover {
+    color: var(--hover-txt);
+}
+
